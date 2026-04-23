@@ -1,9 +1,8 @@
 # Smart-Campus-API-
-
 # Smart Campus Sensor & Room Management API
 
 **Module:** 5COSC022W Client-Server Architectures  
-**Student:** [Your Name]  
+**Student:** Menura Wanniarachchi 20230113/w2153533
 **Technology:** JAX-RS (Jersey 2.41) + Grizzly HTTP Server  
 **Base URL:** `http://localhost:8080/api/v1`
 
@@ -115,7 +114,7 @@ mvn -version
 Clone the repository and run:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/smart-campus-api.git
+git clone https://github.com/MenuraDulneth/Smart-Campus-API-.git
 cd smart-campus-api
 mvn clean package
 ```
@@ -325,17 +324,6 @@ curl -s -X DELETE http://localhost:8080/api/v1/rooms/EMPTY-ROOM \
 **Expected:** `200 OK` with success message.
 
 ---
-
-### 14. Wrong Content-Type — Expect 415
-
-```bash
-curl -s -X POST http://localhost:8080/api/v1/rooms \
-     -H "Content-Type: text/plain" \
-     -d 'plain text body' | python3 -m json.tool
-```
-
-**Expected:** `415 Unsupported Media Type` (handled automatically by JAX-RS).
-
 ---
 
 ## Report: Question Answers
@@ -555,5 +543,6 @@ The `@Provider` annotation on `LoggingFilter` ensures JAX-RS auto-discovers and 
 
 ---
 
-*Report prepared by: [Your Name] | Module: 5COSC022W | University of Westminster*
+*Report prepared by: Menura Wanniarachchi | Module: 5COSC022W | University of Westminster*
+
 
